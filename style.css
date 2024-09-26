@@ -1,0 +1,94 @@
+/* Include the Gyparody font family */
+@font-face {
+    font-family: 'Gyparody';
+    src: url('fonts/Gyparody.woff2') format('woff2'),
+         url('fonts/Gyparody.woff') format('woff'),
+         url('fonts/Gyparody.ttf') format('truetype');
+}
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Gyparody', sans-serif; /* Use the Gyparody font */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #ff0077, #ff9900); /* Gradient background */
+}
+
+/* Container styles */
+.container {
+    text-align: center;
+    color: white;
+}
+
+/* Main heading */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    font-weight: normal;
+    color: white;
+}
+
+/* Highlighted text */
+.highlight {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: white;
+}
+
+/* Countdown styles */
+.countdown {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 4px solid white;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+}
+
+/* Individual time block */
+.time {
+    text-align: center;
+    margin: 0 20px;
+}
+
+/* Time number styles */
+.time span {
+    display: block;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+/* Time label styles */
+.time p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .countdown {
+        flex-direction: column;
+    }
+
+    .time {
+        margin-bottom: 20px;
+    }
+
+    .time span {
+        font-size: 2.5em;
+    }
+}
