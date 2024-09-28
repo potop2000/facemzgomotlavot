@@ -21,6 +21,45 @@ body {
     align-items: center;
     height: 100vh;
     background: linear-gradient(to right, #ff0077, #ff9900); /* Gradient background */
+    position: relative;
+}
+
+/* Header buttons container */
+.header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+/* "Afla mai multe" button */
+.learn-more-btn {
+    font-family: 'Gyparody', sans-serif;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Instagram button */
+.instagram-btn img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.instagram-btn:hover img {
+    transform: scale(1.1);
 }
 
 /* Container styles */
@@ -90,5 +129,16 @@ h1 {
 
     .time span {
         font-size: 2.5em;
+    }
+
+    /* Make buttons smaller on smaller screens */
+    .learn-more-btn {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .instagram-btn img {
+        width: 35px;
+        height: 35px;
     }
 }
